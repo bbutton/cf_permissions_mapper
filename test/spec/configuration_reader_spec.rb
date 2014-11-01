@@ -9,7 +9,7 @@ describe 'Reading config file' do
     configuration = config_reader.parse
 
     expect(configuration.uaa_endpoint).to eq("https://uaa_endpoint")
-    expect(configuration.client_user_name).to eq("admin_user")
+    expect(configuration.client_name).to eq("admin_user")
     expect(configuration.client_secret).to eq("client_secret")
     expect(configuration.use_ssl).to eq(true)
   end

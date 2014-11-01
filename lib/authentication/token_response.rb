@@ -13,7 +13,7 @@ class TokenResponse
     TokenResponse.new content["access_token"], content["refresh_token"], content["token_type"], content["scope"], content["jti"], content["expires_in"]
   end
 
-  def initialize access_token, refresh_token, token_type, scope, jti, expires_in
+  def initialize(access_token, refresh_token, token_type, scope, jti, expires_in)
     @access_token = access_token
     @refresh_token = refresh_token
     @token_type = token_type

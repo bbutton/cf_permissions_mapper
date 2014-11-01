@@ -5,7 +5,6 @@ require 'json'
 require_relative '../../lib/config/configuration_reader'
 require_relative '../../lib/config/configuration'
 require_relative '../../lib/authentication/authenticator'
-require_relative '../../lib/authentication/authenticated_user'
 
 describe 'Authenticates' do
   it 'returns the bearer token for the given username/password' do
