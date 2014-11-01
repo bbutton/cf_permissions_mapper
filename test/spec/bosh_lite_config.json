@@ -1,0 +1,6 @@
+{
+    "uaa_endpoint": "http://uaa.10.244.0.34.xip.io",
+    "client_user_name": "login",
+    "client_secret": "login-secret",
+    "use_ssl": false
+}

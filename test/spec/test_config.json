@@ -1,0 +1,6 @@
+{
+    "uaa_endpoint": "https://uaa_endpoint",
+    "client_user_name": "admin_user",
+    "client_secret": "client_secret",
+    "use_ssl": true
+}
