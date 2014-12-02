@@ -9,15 +9,14 @@ describe 'List orgs' do
 
   it 'should list all orgs' do
     config_reader = ConfigurationReader.new('./spec/bosh_lite_config.json')
-    authenticator = Authenticator.new(config_reader)
+    config = config_reader.parse
+    authenticator = Authenticator.new(config)
 
-    cf_gateway = CFGateway.new(config_reader, authenticator)
+    cf_gateway = CFGateway.new(config, authenticator)
 
     list_orgs = ListOrgs.new(cf_gateway)
     result = list_orgs.execute('admin', 'admin')
 
-    expect(result).not_to be_nil
-
-    puts result
+    expect(result.code).to eq(200)
   end
 end

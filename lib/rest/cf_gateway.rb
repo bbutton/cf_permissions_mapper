@@ -16,6 +16,6 @@ class CFGateway
 
   def do_get(path)
     headers = {"Authorization" => "Bearer #{@current_access_token}", "Host" => "api.10.244.0.34.xip.io", "Cookies" => ""}
-    result = RestClient.get("api.10.244.0.34.xip.io" + path, headers)
+    response = RestClient.get("api.10.244.0.34.xip.io" + path, headers)
   end
 end

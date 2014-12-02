@@ -3,9 +3,8 @@ require 'base64'
 require_relative '../authentication/token_response'
 
 class Authenticator
-  def initialize configuration_reader
-    configuration_reader = configuration_reader
-    @configuration = configuration_reader.parse
+  def initialize configuration
+    @configuration = configuration
   end
 
   def login username, password
